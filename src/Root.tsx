@@ -1,23 +1,24 @@
 import React from 'react';
 import {Composition} from 'remotion';
-import {PackOpening, type PackOpeningProps} from './PackOpening';
+import {DailyStencilPack, type DailyStencilPackProps} from './DailyStencilPack';
 
-export const RemotionRoot: React.FC = () => {
-  return (
-    <Composition<PackOpeningProps>
-      id="BeyondTattooPack"
-      component={PackOpening}
-      durationInFrames={600}
-      fps={60}
-      width={1080}
-      height={1920}
-      defaultProps={{
-        title: 'ANUBIS',
-        subtitle: 'FREE STENCIL DROP',
-        website: 'beyondimagination.co.technology',
-        primary: '#8A2EFF',
-        stencilFile: 'stencil.jpg'
-      }}
-    />
-  );
-};
+export const RemotionRoot: React.FC = () => (
+  <Composition<DailyStencilPackProps>
+    id="DailyStencilPack"
+    component={DailyStencilPack}
+    width={1080}
+    height={1920}
+    fps={60}
+    durationInFrames={600}
+    defaultProps={{
+      title: 'BIBLICAL REALISM',
+      collection: 'DIVINE REALISM',
+      dropNumber: '01',
+      releaseDate: 'JULY 17, 2026',
+      website: 'beyondimagination.co.technology',
+      stencilFile: 'stencil.png',
+      primary: '#8A2EFF',
+      accent: '#E6C36A',
+    }}
+  />
+);

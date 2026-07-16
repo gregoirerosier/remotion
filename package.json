@@ -1,12 +1,13 @@
 {
-  "name": "beyond-tattoo-remotion",
-  "version": "1.0.0",
+  "name": "beyond-tattoo-daily-pack-v2",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "remotion studio --no-open --webpack-poll 1000",
     "preview": "remotion studio --no-open --webpack-poll 1000",
-    "render": "remotion render BeyondTattooPack out/Beyond-Tattoo-Pack.mp4",
-    "render:half": "remotion render BeyondTattooPack out/Beyond-Tattoo-Pack-preview.mp4 --scale=0.5"
+    "render": "remotion render DailyStencilPack out/Daily-Stencil-Pack.mp4",
+    "render:preview": "remotion render DailyStencilPack out/Daily-Stencil-Pack-preview.mp4 --scale=0.5",
+    "still": "remotion still DailyStencilPack out/preview.png --frame=420"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",

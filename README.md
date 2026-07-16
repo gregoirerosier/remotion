@@ -1,44 +1,50 @@
-# Beyond Tattoo — Remotion Pack Opening
+# Beyond Tattoo Daily Stencil Pack V2
 
-Vertical 1080×1920, 10-second, 60fps pack-opening animation.
+Upgraded Remotion project for the daily Beyond Tattoo pack-opening video.
 
-## In GitHub Codespaces
+## Daily workflow
+
+Only replace these two files:
+
+1. `public/stencil.png`
+2. `public/daily-stencil.json`
+
+Then copy the values from `daily-stencil.json` into `src/Root.tsx` defaultProps, or edit them directly in Remotion Studio.
+
+## Run in GitHub Codespaces
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open forwarded port 3000 and select **BeyondTattooPack**.
+Open forwarded port 3000.
 
-## Render a quick half-resolution preview
-
-```bash
-npm run render:half
-```
-
-## Render the full MP4
+## Render
 
 ```bash
+npm run render:preview
 npm run render
 ```
 
-Output:
+Final MP4:
 
-```text
-out/Beyond-Tattoo-Pack.mp4
-```
+`out/Daily-Stencil-Pack.mp4`
 
-## Replace the reveal artwork
+## Composition
 
-Replace `public/stencil.jpg` with another image using the same filename, or edit `stencilFile` in `src/Root.tsx`.
+- ID: `DailyStencilPack`
+- 1080 × 1920
+- 60 fps
+- 600 frames / 10 seconds
 
-## Push this project into an empty GitHub repository
+## V2 upgrades
 
-Upload all files in this folder through the GitHub web interface, or use the Codespaces terminal:
-
-```bash
-git add .
-git commit -m "Add Beyond Tattoo Remotion pack opening"
-git push origin main
-```
+- Layered parallax starfield and fog
+- Premium foil pack with animated shimmer
+- Three tap ripples and anticipation squash
+- Top seam tear animation
+- White/gold divine burst and foil shards
+- Floating framed stencil reveal
+- Artist-approved / print-ready / high-detail strip
+- Branded final download card
