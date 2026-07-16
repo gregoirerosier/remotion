@@ -1,0 +1,22 @@
+{
+  "name": "beyond-tattoo-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio --no-open --webpack-poll 1000",
+    "preview": "remotion studio --no-open --webpack-poll 1000",
+    "render": "remotion render BeyondTattooPack out/Beyond-Tattoo-Pack.mp4",
+    "render:half": "remotion render BeyondTattooPack out/Beyond-Tattoo-Pack-preview.mp4 --scale=0.5"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.4.0"
+  }
+}
